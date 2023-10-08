@@ -1,0 +1,10 @@
+[deps]
+CxxCall = "dbaf2c2e-b61b-429c-b386-57175d7288fb"
+DistributedArrays = "aaf54ef3-cdf8-58ed-94cc-d582ad619b94"
+LibCURL = "b27032c2-a3e7-50c8-80cd-2d36dbcbfd21"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+RCall = "6f49c342-dc21-5d91-9882-a32aef131414"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+SymPy = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
