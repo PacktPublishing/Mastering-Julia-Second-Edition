@@ -5,6 +5,7 @@ isinstalled(pkg::String) = any(x -> x.name == pkg && x.is_direct_dep, values(Pkg
 const PKGS = ["SpecialFunctions","DataFrames","Base64","DataStructures","LinearAlgebra","SparseArrays","Statistics"]
 
 using Pkg
+Pkg.activate(".")
 println("Installing required packages ...")
 
 for p in PKGS
