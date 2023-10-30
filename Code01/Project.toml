@@ -2,5 +2,7 @@
 BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
 IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
 Pluto = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
-PythonPlot = "274fc56d-3b97-40fa-a1cd-1b4a50311bf9"
+PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
 UnicodePlots = "b8865327-cd53-5732-bb35-84acbb429228"
