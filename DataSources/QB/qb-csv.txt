@@ -1,0 +1,6 @@
+
+select distinct c.catname, a.autname, q.quotext 
+from "quotes.csv" q
+join "categories.csv" c on q.cid = c.id
+join "authors.csv" a on q.aid = a.id
+order by c.catname, a.autname;
