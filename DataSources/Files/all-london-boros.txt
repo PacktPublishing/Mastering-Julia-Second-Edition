@@ -1,0 +1,12 @@
+Camden,270029,1
+Greenwich,287942,0
+Hackney,281120,1
+Hammersmith,185143,0
+Islington,242467,1
+Kensington,1561291,
+Lambeth,3260341,
+Lewisham,305842,0
+Southwark,318830,1
+Tower Hamlets,324745,1
+Wandsworth,329667,0
+Westminster,361317,1
