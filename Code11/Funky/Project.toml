@@ -1,0 +1,20 @@
+name = "Funky"
+uuid = "7b4985b6-35d9-11e9-2d36-7b0190d680de"
+authors = ["Malcolm Sherrington <malcolm@amisllp.com>"]
+version = "0.1.0"
+
+[deps]
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+IndexedTables = "6deec6e2-d858-57c5-ab9b-e6ca5bd20e43"
+Lazy = "50d2b5c4-7a5e-59d5-8109-a42b560f39c0"
+MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+TimeSeries = "9e3dc215-6440-5c97-bce1-76c03772f85e"
+Traceur = "37b6cedf-1f77-55f8-9503-c64b63398394"
