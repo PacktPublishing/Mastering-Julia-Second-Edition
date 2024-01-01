@@ -13,7 +13,7 @@
 - [Plots API](Plots-API)
 - [Gadfly](Gadfly) 
 - [Plotly](Plotly)
-- [Statistics Plots](StatsPlots)
+- [Statistics Plots](StatPlots)
 - [Makie Framework](Makie)
 - [Images Package](ImageProcs)
 
