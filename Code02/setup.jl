@@ -1,4 +1,4 @@
-#!/usr/local/bin/julia
+#!/usr/bin/env julia
 #
 isinstalled(pkg::String) = any(x -> x.name == pkg && x.is_direct_dep, values(Pkg.dependencies()))
 
