@@ -1,10 +1,10 @@
-# Code Contents for Chapter 2
+# Code Contents for Chapter 8
 
 #### The following files are present in this code directory.
 
-**Chp02.jl** -- Listings for basic examples which can be run in the REPL or uploaded to VS Code.
+**Chp08.jl** -- Listings for basic examples which can be run in the REPL or uploaded to VS Code.
 
-**Chp02.ipynb** -- Jupyter notebook containing selected worked listings.
+**Chp08.ipynb** -- Jupyter notebook containing selected worked listings.
 
 ---
 
@@ -25,5 +25,5 @@
 
 **Manifest.toml** - Manifest TOML file.
 
-**setup.jl** - Installation script for required Julia modules.
+**setup.jl** - Installation script for basic Julia examples.
 
