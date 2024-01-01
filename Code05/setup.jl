@@ -1,4 +1,4 @@
-#!/usr/local/bin/julia
+#!/usr/bin/env julia
 #
 # Note: Assume OSX and an alias setup to julia in /usr/local/bin
 #
