@@ -15,7 +15,7 @@
 - [Plotly](Plotly)
 - [Statistics Plots](StatsPlots)
 - [Makie Framework](Makie)
-- [Image Processing](ImageProcs)
+- [Images Package](ImageProcs)
 
 ---
 
