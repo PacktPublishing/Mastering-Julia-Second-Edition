@@ -11,7 +11,7 @@
 ### Folders with further more advanced examples
 
 - [Plots API](Plots-API)
-- [Gadfly and Cairo](Gadfly) 
+- [Gadfly and Compose](Gadfly) 
 - [Plotly](Plotly)
 - [Statistics Plots](StatsPlots)
 - [Makie Framework](Makie)
