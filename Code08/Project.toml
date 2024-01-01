@@ -1,0 +1,5 @@
+[deps]
+Luxor = "ae8d54c2-7ccd-5906-9d76-62fc9837b5bc"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+UnicodePlots = "b8865327-cd53-5732-bb35-84acbb429228"
+Winston = "bd07be1c-e76f-5ff0-9c0b-f51ef45303c6"
