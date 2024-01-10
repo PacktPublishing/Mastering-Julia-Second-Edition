@@ -53,12 +53,12 @@ With the following software  you can run all code files present in the book (Cha
 
 
 ### Julia's Resources
-Homepage: https://julialang.org
-Binaries: https://julialang.org/downloads/
-Source code: https://github.com/JuliaLang/julia
-Documentation: https://docs.julialang.org
-Packages: https://julialang.org/packages/
-Discussion forum: https://discourse.julialang.org
+- Homepage: https://julialang.org
+- Binaries: https://julialang.org/downloads/
+- Source code: https://github.com/JuliaLang/julia
+- Documentation: https://docs.julialang.org
+- Packages: https://julialang.org/packages/
+- Discussion forum: https://discourse.julialang.org
 
 
 ### Get to Know the Author
