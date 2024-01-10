@@ -8,7 +8,7 @@
 
 **echos.jl** -- Standalone echo server
 
-**echoargs.jl** -- Script to cho arguments from the command line.
+**echoargs.jl** -- Script to echo arguments from the command line.
 
 ---
 
