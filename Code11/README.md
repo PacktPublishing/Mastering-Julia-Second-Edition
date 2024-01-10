@@ -12,11 +12,14 @@
 **queens.jl** -- Function to solve the _Queens_ problem.
 
 ---
+
 **Funky** -- Folder for the Funky project.
 
 **statprof** -- Folder created by Stat HTML Profiler
 
 ---
+### TOML files and Setup script
+
 **Project.toml** - Project TOML file.
 
 **Manifest.toml** - Manifest TOML file.
