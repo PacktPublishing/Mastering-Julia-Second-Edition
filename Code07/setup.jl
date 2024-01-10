@@ -1,10 +1,20 @@
 #!/usr/bin/env julia
 #
-isinstalled(pkg::String) = any(x -> x.name == pkg && x.is_direct_dep, values(Pkg.dependencies()))
+# Note: Assume MacOS/Linux
+#
 
-const PKGS = ["Distributions","PyPlot","Plots","FFTW","DSP","OrdinaryDiffEq","Sundials","Roots",
-              "Sundials","DifferentialEquations","Calculus","ForwardDiff","SymPy","QuadGK",
-              "HCubature","JuMP","Clp","GLPK","Optim","SimJulia","ResumableFunctions"]
+# Delete any existing TOML files
+
+println("\nDeleting any TOML files ...")
+rm("./Project.toml",force=true)
+rm("./Manifest.toml",force=true)
+
+# Create new TOML files
+
+isinstalled(pkg::String) = any(x -> x.name == pkg && x.is_direct_dep, values(Pkg.dependencies()))
+const PKGS = ["CSV","DelimitedFiles","JLD","HDF5","LightXML","Query","Dates",
+      "Statistics","StatsBase","DataFrames","TimeSeries","Plots","PyPlot","XLSX",
+      "RDatasets","KernelDensity","HypothesisTests","GLM"]
 
 using Pkg
 Pkg.activate(".")
@@ -13,4 +23,6 @@ println("Installing required packages ...")
 for p in PKGS
   isinstalled(p) || Pkg.add(p)
 end
-println("Done!")
+
+println("\nListing installed packages ...")
+Pkg.status()
