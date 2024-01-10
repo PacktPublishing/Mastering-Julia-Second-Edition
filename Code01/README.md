@@ -1,28 +1,28 @@
-# Code Contents for Chapter 1
+## Code samples for Chapter 1
 
-#### The following files and folders are present in this code directory.
+Collection of Jupyter notebooks and accompanying slides & scripts from various presentations.
 
-**Chp01.jl** -- Listings for all code which can be run in the REPL or uploaded to VS Code.
-    
-**basel.jl** -- Separate script for solving the Basel summation problem.
-    
-**Chp01.ipynb** -- Jupyter notebook of some of the code sniipets.
-    
-**Chp01.pluto.jl** -- Pluto workbook of some code snippets (*without Asian plots*) 
-    
-**Asian.pluto.jl** -- Graphics of Asian (*Brownian*) trajectories.
+-  **Chp01.jl** : Main scripts in Julia format
+
+-  **Chp01.ipynb** : Main scripts as a Jupyter file
+
+-  **Chp01.pluto.jl** : Main scripts as a Pluto file
+
+-  **Asian.pluto.jl**: Asian option example as Pluto file
 
 ---
 
-**PIEs** -- Folder containing various versions of the *PI Es*timation routine.
+### TOML files and Setup script
 
----
+-  **Project.toml** : Project TOML file
 
-**Project.toml** - Project TOML file.
+-  **Manifest.toml** : Manifest TOML file
 
-**Manifest.toml** - Manifest TOML file.
+-  **setup.jl** : Julia script to add packages
 
-**setup.jl** - Installation script for required Julia modules.
+Use the *setup.jl* script to create new project files, deleting any existing ones.
 
- 
+This can either be run from the command line as *julia setup.jl* or using *include("setup.jl")* in the REPL.
+
+The first time the directory is activated it is advised to <u>instantiate</u> it to bring the installed packages uptodate with the current version of Julia.
 

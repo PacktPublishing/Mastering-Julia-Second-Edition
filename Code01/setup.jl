@@ -1,7 +1,16 @@
 #!/usr/bin/env julia
 #
-# Note: Assume OSX and an alias setup to julia in /usr/local/bin
+# Note: Assume MacOS/Linux
 #
+
+# Delete any existing TOML files
+
+println("\nDeleting any TOML files ...")
+rm("./Project.toml",force=true)
+rm("./Manifest.toml",force=true)
+
+# Create new TOML files
+
 isinstalled(pkg::String) = any(x -> x.name == pkg && x.is_direct_dep, values(Pkg.dependencies()))
 
 const PKGS = ["BenchmarkTools","UnicodePlots","PyCall","PyPlot","IJulia","Pluto","PlutoUI"]
@@ -9,8 +18,11 @@ const PKGS = ["BenchmarkTools","UnicodePlots","PyCall","PyPlot","IJulia","Pluto"
 using Pkg
 Pkg.activate(".")
 
-println("Installing required packages ...")
+println("\nInstalling required packages ...")
 for p in PKGS
   isinstalled(p) || Pkg.add(p)
 end
-println("Done!")
+
+println("\nListing installed packages ...")
+Pkg.status()
+
