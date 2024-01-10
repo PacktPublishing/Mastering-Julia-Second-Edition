@@ -1,10 +1,10 @@
-# Code Contents for Chapter 6
+# Code Contents for Chapter 7
 
 #### The following files are present in this code directory.
 
-**Chp06.jl** -- Listings for all code which can be run in the REPL or uploaded to VS Code.
+**Chp07.jl** -- Listings for all code which can be run in the REPL or uploaded to VS Code.
 
-**Chp06.ipynb** -- Jupyter notebook containing worked listings.
+**Chp07.ipynb** -- Jupyter notebook containing worked listings.
 
 ---
 
