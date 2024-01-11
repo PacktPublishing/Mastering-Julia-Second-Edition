@@ -4,7 +4,7 @@
 
 **Examples.jl** -- Listings for code which can be run in the REPL or uploaded to VS Code.
 
-**Examp;es.ipynb** -- Jupyter notebook containing worked examples.
+**Examples.ipynb** -- Jupyter notebook containing worked examples.
 
 ---
 
