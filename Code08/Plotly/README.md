@@ -1,4 +1,4 @@
-# Contents for Visualization section : Plotly
+# Contents for Visualization section : Plotly (JS)
 
 #### The following files are present in this code directory.
 
