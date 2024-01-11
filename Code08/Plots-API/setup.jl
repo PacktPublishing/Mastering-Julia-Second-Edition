@@ -12,7 +12,7 @@ rm("./Manifest.toml",force=true)
 # Create new TOML files
 
 isinstalled(pkg::String) = any(x -> x.name == pkg && x.is_direct_dep, values(Pkg.dependencies()))
-const PKGS = ["Plots","GR","IJulia""]
+const PKGS = ["Plots","GR","IJulia"]
 
 using Pkg
 Pkg.activate(".")
