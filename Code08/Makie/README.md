@@ -1,4 +1,4 @@
-# Contents for Visualization section : Makie
+# Contents for Visualization section : Makie Framework
 
 #### The following files are present in this code directory.
 
