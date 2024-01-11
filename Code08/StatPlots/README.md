@@ -1,4 +1,4 @@
-# Contents for Visualization section : Plots API 
+# Contents for Visualization section : StatsPlots 
 
 #### The following files are present in this code directory.
 
