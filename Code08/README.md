@@ -2,9 +2,9 @@
 
 #### The following files are present in this code directory.
 
-**Chp08.jl** -- Listings for basic examples which can be run in the REPL or uploaded to VS Code.
+**Examples.jl** -- Listings for basic examples which can be run in the REPL or uploaded to VS Code.
 
-**Chp08.ipynb** -- Jupyter notebook containing selected worked listings.
+**Examples.ipynb** -- Jupyter notebook containing selected worked listings.
 
 ---
 
