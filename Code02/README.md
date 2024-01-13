@@ -2,9 +2,9 @@
 
 #### The following files are present in this code directory.
 
-**Chp02.jl** -- Listings for all code which can be run in the REPL or uploaded to VS Code.
+**Examples.jl** -- Listings for all code which can be run in the REPL or uploaded to VS Code.
 
-**Chp02.ipynb** -- Jupyter notebook containing worked listings.
+**Examples.ipynb** -- Jupyter notebook containing worked listings.
 
 **JSet.pluto.jl** -- Pluto workbook to display Juliaset without saving to disk.
 
