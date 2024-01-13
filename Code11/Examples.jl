@@ -1,4 +1,4 @@
-[ SAMPLE Config file ]
+### [ SAMPLE Config file ] ###
 
 #= Packages which I usually need and are in Base so add them here. =#
 using Pkg, Printf, Random, REPLHistory
@@ -9,13 +9,16 @@ it is a little more verbose since the haskey() function was deprecated =#
  isinstalled(pkg::String) =
   any(x -> x.name == pkg && x.is_direct_dep,
                      values(Pkg.dependencies()))
+
 #= Julia has some pseudo Unix commands such as cd, pwd, 
    mkdir, rm, but these are missing – these can, of course,
    be run in shell mode =#
+
 ls(dir::String = ".") = run(`ls -l`)
 ls(dir::String = ".") = run(`ls -l $dir`)
 cat(fname::String )   = run(`cat $fname`)
 more(fname::String )  = run(`more $fname`)
+
 # A little superfluous perhaps 
 pwup(x, p::Number)  = x*p
 pwup(x::Array)  = x.*p
@@ -23,6 +26,7 @@ sq(x)     = pwup(x, 2)
 sqroot(x) = pwup(x, 0.5)
 cb(x)     = pwup(x, 3)
 cbroot(x) = pwup(x, 1//3)
+
 # Defined in the book, so I have aded them here.
 mad2(a,b,c) = a*b + c
 systime()   = ccall((:time, "libc"), Int32, ());
@@ -31,16 +35,19 @@ macro PkgSetup()
   Pkg.activate(".")
   Pkg.instantiate()
 end
+
 # … and one to execute an ‘immediate’ if statement. 
 macro iif(cond,doit)
   if (eval(cond)) doit end
 end
+
 # I miss this older statement, so defined it here.
 function linspace(x0::Real, x1::Real, N::Integer)
   @assert (x0 < x1) && (N > 0)
   h = (x1 - x0) / N
   return collect(x0:h:x1)
 end
+
 #= Another way to activate folders, automatically when 
    Julia starts by defining a new environment variable
    in the user’s shell start up file =#
@@ -50,13 +57,11 @@ if haskey(ENV,"JULIA_ACTIVATE") &&
   Pkg.instantiate()
 end
 
-
-
-# Juliet alias
+# Jules and Juliet alias
+jules=="julia --color=no"
 juliet="julia -i -e 'import Pkg; Pkg.activate(\".\")'"
 
-
-[ ftop.jl script]
+### [ ftop.jl script] ###
 
 #! /usr/bin/env julia --quiet --depwarn=no
 #
@@ -102,8 +107,9 @@ let
 end
 
 
-[Getopt.jl script]
-#! /usr/bin/env julia
+### [ Getopt.jl script ] ###
+
+###! /usr/bin/env julia
 #
 using Getopt
 short_list = "ho:q"
@@ -117,7 +123,7 @@ end
 println("Length of modified ARGS array: ", size(ARGS))
 
 
-[Create Gadfly system image and use it to retrieve iris dataset and displayit]
+# [Create Gadfly system image and use it to retrieve iris dataset and displayit]
 
 using PackageCompiler
 import Pkg; Pkg.activate(".")
@@ -139,7 +145,7 @@ d = plot(iris, x=:SepalLength, y=:SepalWidth, color=:Species, Geom.point);
 display(d)
 
 
-[Panto.jl source]
+### [Panto.jl source] ###
 
 """
 Calculate the sum of the series i/(i+1)^2 using the genie function for an integer 
@@ -209,7 +215,7 @@ end
 @benchmark(alibaba(4*10^9), samples=1, evals=1)
 
 
-[Traceur]
+### [Traceur] ###
 
 # Modify alibabi to highlight step with uses most computing time
 
@@ -230,8 +236,7 @@ end
 using Traceur
 @trace alibaba_1(40);
 
-
-# Use StatProfile to determin where bottle next is and redo alibabi
+# Use StatProfile to determine where bottle next is and redo alibabi
 # This is later in the chapter, assume the panto function are included as separate file
 
 using BenchmarkTools, StatProfilerHTML
@@ -264,7 +269,7 @@ b2 = alibaba_2(3);   # Argument is 3 since it is multiplied by 40
 @btime b1 = alibaba(40*10^5);
 @btime b2 = alibaba_2(10^5);
 
-[ Source for the Funky module]
+### [ Source for the Funky module] ###
 
 module Funky
 using HTTP, CSV, DataFrames, TimeSeries, IndexedTables
