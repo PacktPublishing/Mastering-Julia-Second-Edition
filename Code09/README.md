@@ -2,9 +2,9 @@
 
 #### The following files are present in this code directory.
 
-**Chp09.jl** -- Listings for all code which can be run in the REPL or uploaded to VS Code.
+**Examples.jl** -- Listings for all code which can be run in the REPL or uploaded to VS Code.
 
-**Chp09.ipynb** -- Jupyter notebook containing worked listings.
+**Examples.ipynb** -- Jupyter notebook containing worked listings.
 
 **Quotes.db** -- Quotes database (SQLite version)
 
