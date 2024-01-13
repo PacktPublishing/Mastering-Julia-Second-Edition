@@ -6,6 +6,8 @@
     
 **Examples.ipynb** -- Jupyter notebook of some of the code sniipets.
     
+**Sympy.jl** -- Symbolic script to run in VSCode
+
 **Sympy.ipynb** -- Symbolic manipulation via Jupiter notebook
 
 ---
