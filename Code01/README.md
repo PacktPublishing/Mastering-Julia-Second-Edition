@@ -2,11 +2,11 @@
 
 Collection of Jupyter notebooks and accompanying slides & scripts from various presentations.
 
--  **Chp01.jl** : Main scripts in Julia format
+-  **Examples.jl** : Main scripts in Julia format
 
--  **Chp01.ipynb** : Main scripts as a Jupyter file
+-  **Examples.ipynb** : Main scripts as a Jupyter file
 
--  **Chp01.pluto.jl** : Main scripts as a Pluto file
+-  **Examples.pluto.jl** : Main scripts as a Pluto file
 
 -  **Asian.pluto.jl**: Asian option example as Pluto file
 
