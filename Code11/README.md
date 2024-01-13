@@ -1,7 +1,7 @@
 # Code Contents for Chapter 11
 #### The following files are present in this code directory.
 
-**Chp11.jl** -- Listings for all code which can be run in the REPL or uploaded to VS Code.
+**Examples.jl** -- Listings for all code which can be run in the REPL or uploaded to VS Code.
 
 **ftop.jl** -- Stand-alone script for finding largest files in a folder and its subfolders.
 
