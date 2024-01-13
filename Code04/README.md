@@ -2,9 +2,9 @@
 
 #### The following files are present in this code directory.
 
-**Chp04.jl** -- Listings for all code which can be run in the REPL or uploaded to VS Code.
+**Examples.jl** -- Listings for all code which can be run in the REPL or uploaded to VS Code.
 
-**Chp04.ipynb** -- Jupyter notebook containing worked listings.
+**Examples.ipynb** -- Jupyter notebook containing worked listings.
 
 **ModInts.jl** -- Modular Integers module
 
