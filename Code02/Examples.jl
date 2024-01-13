@@ -46,7 +46,6 @@ A[1]=1
 A[2]=1
 [A[i] = A[i-1] + A[i-2] for i = 3:length(A)]
 
-
 # The 'recursive' definition of factorial function
 # A simple loop is much quicker
 #
@@ -76,11 +75,9 @@ gamma(31)     # Γ(n+1)  <=>  n!
 # Note that this returns a BigInt regardless of the input
 #
 fac(N::Integer) =   (N < 1) ? throw(ArgumentError("N must be positive")) : reduce(*,collect(big.(1:N)))
-
 @time(fac(402))
 
 gamma(big(403.0))
-
 
 # The 'standard' recursive definition
 
@@ -90,7 +87,6 @@ function fib(k::Integer)
 end
 
 @time fib(15)
-
 
 # A better version
 
@@ -125,7 +121,6 @@ end
 
 # Is a built-in constant in Julia
 Base.MathConstants.golden
-
 
 # Reseed the random number generator: 
 # rng will give a reproducible sequence of numbers
@@ -168,7 +163,6 @@ end
 
 bacs()
 
-
 # Look at different definitions of the norm function
 # For a Gaussian distribution of size N we should expect the answer ~= √N
 # The first call f1(1) is to run in the function and not affext the timing
@@ -181,7 +175,6 @@ f1(10);
 
 @time f1(100_000_000)
 
-
 # We can get the same result using a mapreduce procedure
 # Note that it is a new set of random number, so the answer is slightly different
 # The time is about the same
@@ -189,7 +182,6 @@ f1(10);
 f2(n) = sqrt(mapreduce(x -> x*x, +, randn(n)))
 f2(10);
 @time f2(100_000_000)
-
 
 # Using a conventional mapping we need to pipe the result to sum it 
 # and then take the square root
@@ -220,10 +212,10 @@ f4(10);
         
 cop(X, i) = any(j -> i % j == 0, X)        
 
-function erato(N::Integer)
-  @assert N > 0
+function erato(n::Integer)
+  @assert n > 0
   P = Int[]
-  for i in 2:N
+  for i in 2:n
     if !cop(P, i)
       push!(P, i)
     end
@@ -235,6 +227,11 @@ end
 
 tm = @elapsed A = erato(1_000_000);
 print("Computed $(length(A)) primes in $(round(tm, digits=4)) sec.")
+
+# Compute primorials for all primes upto 50
+# Note need to use BigInts as the cumulative product gets large.
+
+unique([foldr(*,erato(n),init=BigInt(1)) for n in 2:50])
 
         
 # Julia Sets
