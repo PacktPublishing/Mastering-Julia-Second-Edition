@@ -1,4 +1,4 @@
-exit()using BenchmarkTools, UnicodePlots, PythonPlot
+)using BenchmarkTools, UnicodePlots, PythonPlot
 
 # Define a function to compute the sum of the squares of (x,y)
 
