@@ -1,3 +1,5 @@
+# Compute an Asian stock option
+
 using PythonPlot
 plt = PythonPlot 
 
