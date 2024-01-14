@@ -86,7 +86,9 @@ end
 ## [Quotes server] ##
 
 using HTTP, SQLite, DataFrames
-DQ = ENV["HOME"]*"/MJ2/DataSources/Quotes";
+
+HOMEDIR = (Sys.iswindows() ? ENV["HOMEPATH"] : ENV["HOME"]);
+DQ = joinpath(HOMEDIR,"MJ2","DataSources","Quotes");
 db = SQLite.DB("$DQ/quotes.db");
 
 function getquote(db::SQLite.DB)
@@ -211,9 +213,12 @@ using Mux
   Mux.notfound())
 
 serve(muxtest)
-
+        
 using AssetRegistry
-bacon = ENV["HOME"]*"/MJ2/DataSources/Files/bacon.html";
+        
+HOMEDIR = (Sys.iswindows() ? ENV["HOMEPATH"] : ENV["HOME"]);
+bacon = joinpath(HOMEDIR,"MJ2","DataSources","Files","bacon.html");
+
 assb = AssetRegistry.register(bacon)
 "/assetserver/243f4cc0f7c3769dcb9b8da88895c744ceeb8bb5-bacon.html"
 
@@ -466,7 +471,9 @@ import Pkg; Pkg.activate(".")
 using Distributions, StatsBase, OnlineStats
 using DataFrames, DTables, Query, CSV, Printf
 
-DS=ENV["HOME"]*"/MJ2/DataSources/CSV";
+HOMEDIR = (Sys.iswindows() ? ENV["HOMEPATH"] : ENV["HOME"]);
+DS = joinpath(HOMEDIR,"MJ2","DataSources","CSV");
+
 players = ["$DS/P1.csv","$DS/P2.csv","$DS/P3.csv"]
 
 d = DTable(CSV.File, players);
