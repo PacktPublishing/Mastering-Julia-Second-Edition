@@ -44,7 +44,7 @@ basel(10^6) = 1.6449330668487
 
 ### Software List
 
-With the following software  you can run all code files present in the book (Chapter 1-12).
+With the following software  you can run all code files present in the book (Chapters 01-11).
 
 | Chapter | Software Required | Operating System |
 | --- | --- | --- |
