@@ -21,7 +21,7 @@ This book covers the *(some of)* following features:
 * Apply scientific programming techniques to solution of dynamic systems, optimisation etc.  
 * Visualise your data in Julia with plotting packages.
 * Interface with SQL and NoSQL databases.
-* Examine Julia's approach to Bayesian methods and machine learning.
+* Interact with networked and web-based systems.
 
 
 ### Instructions and Navigations
