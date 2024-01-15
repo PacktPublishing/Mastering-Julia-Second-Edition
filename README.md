@@ -63,5 +63,8 @@ With the following software  you can run all code files present in the book (Cha
 
 ### Get to Know the Author
 
-Malcolm Sherrington ...
+Malcolm Sherrington has been working in computing for over 40 years. He has degrees in mathematics, chemistry, and engineering and has held lectureships at two separate universities in UK. Additionally in the 1980's he established his own consultancy initially working in Aerospace establishments in both Rome and Munich and then returned to Britain to work on medical imaging at a major NHS research hospital and subsequently on as a full stack developer in the banking sector of the City of London.
 
+He started programming scientific problems in the early 1970s using Fortran, as part of his graduate and then doctoral studies then went on to work on engineering systems written in DEC PDP/VAX assembly programming and as an early adopter of Unix moved via C/C++, through to Ada and Common Lisp.  Latterly he was involved with data processing and analytics in Perl, Python, and R, in particular working with large scale SQL and then NoSQL databases in financial establishments.
+
+Malcolm was the founder of the London Julia User Group in 2012, as well as then being a co-organizer of the UK High Performance Computing and the Financial Engineers and Quant (London) meetup groups. He has spoken widely in both the UK and Europe on topics related to Julia and Financial Engineering.
